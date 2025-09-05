@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mostrando: #82ACFF;
+  --esperando: #2351A8;
+  --flotando: #2351A8;
+}
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+  background: #CEBDFF;
+  color: #FFF8E0;
+
+}
+h1{
+  color: #E0C2FF;
+}
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(calc(90% - 2rem), 500px);
+    height:auto;
+    padding: 1rem;
+    margin: auto;
+    background: teal;
+    border-radius: .5rem;
+    z-index: 9999;
+}
+.locura {
+
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+.bajada {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.link {
+  color:E0001A;
+
+}
+
+p{
+  padding:0.5rem 0;
+}
+
+nav{
+  margin:1rem 0;  
+}
+
+nav a{
+  line-height: 1;
+  text-decoration: none;
+  color:black;
+  margin:0 1rem 0 0;
+  padding:0.3rem 1rem;
+  background:var(--esperando);
+  border-radius: .6rem;
+  transition:all ease .75s;
+}
+
+nav a:hover{
+  color:white;
+  background:var(--flotando);  
+  transition:all ease .75s;
+}
+
+nav a.active{
+  color:black;
+  background:var(--mostrando);
+}
+/*.font: {
+  font-family: "Courier+Prime", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}*/
